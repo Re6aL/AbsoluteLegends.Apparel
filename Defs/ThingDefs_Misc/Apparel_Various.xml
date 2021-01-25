@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- +++++ Sportivki +++++ -->
+  <ThingDef ParentName="ApparelMakeableBase" Name="Sportivki">
+    <defName>Slav_Sportivki</defName>
+    <label>sportivki</label>
+    <description>Sporty pants with stripes on the sides. Suits every occasion, weddings the most.</description>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/Pants/Sportivki</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>
+    <generateCommonality>0.35</generateCommonality>
+    <costStuffCount>42</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.4</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.40</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.8</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+	<recipeMaker>
+			<researchPrerequisite>Slav_Apparel</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+	</recipeMaker>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+    <!-- +++++ Maika +++++ -->
+    <ThingDef ParentName="ApparelMakeableBase">
+		<defName>Slav_TankTop</defName>
+		<label>Maika</label>
+		<description>A sleeveless tank top, can be used as a napkin after snacks.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Top/Maika</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>1</generateCommonality>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>0.27</Mass>
+            <StuffEffectMultiplierArmor>0.18</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>0.10</MeleeDodgeChance>
+			<MoveSpeed>0.03</MoveSpeed>
+		</equippedStatOffsets>
+    <thingCategories Inherit='False'>
+      <li>Apparel</li>
+    </thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Top/Maika</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>IndustrialBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+            </defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Slav_Apparel</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+    </ThingDef>
+
+
+
+</Defs>

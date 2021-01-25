@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Slav Apparel</name>
+  <author>Rebal</author>
+  <supportedVersions>
+    <li>1.2</li>
+  </supportedVersions>
+  <packageId>Slav.Apparel</packageId>
+  <description>This mod adds vanilla style eastern Europe apparel to the Rim. Because RAS RAS RAS this is HARDBASS, everybody wear SPORTIVKI ADIDAS.</description>
+  <loadAfter>
+  </loadAfter>
+</ModMetaData>

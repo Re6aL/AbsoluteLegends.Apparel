@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+    <identifier>SlavApparel</identifier>
+    <version>0.0.0.1</version>
+    <dependencies>
+    </dependencies>
+    <incompatibleWith>
+    </incompatibleWith>
+    <loadBefore>
+    </loadBefore>
+    <loadAfter>
+    </loadAfter>
+    <suggests>
+      <li>AbsoluteLegendsHair</li>
+      <li>AbsoluteLegendsGuns</li>
+    </suggests>
+    <showCrossPromotions>true</showCrossPromotions>
+    <manifestUri>https://raw.githubusercontent.com/Re6aL/SlavApparel/master/About/Manifest.xml</manifestUri>
+    <downloadUri>https://github.com/Re6aL/SlavApparel/</downloadUri>
+</Manifest>
