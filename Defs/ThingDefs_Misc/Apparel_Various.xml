@@ -3,15 +3,16 @@
 
   <!-- +++++ Sportivki +++++ -->
   <ThingDef ParentName="ApparelMakeableBase" Name="Sportivki">
-    <defName>Slav_Sportivki</defName>
+    <defName>S_Sportivki</defName>
     <label>sportivki</label>
     <description>Sporty pants with stripes on the sides. Suits every occasion, weddings the most.</description>
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>Pants/Sportivki</texPath>
+      <texPath>Things/Apparel/Pants/Sportivki</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
 	<techLevel>Industrial</techLevel>
 	<tradeability>Sellable</tradeability>
@@ -55,16 +56,15 @@
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 	</recipeMaker>
-    <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
     <!-- +++++ Maika +++++ -->
     <ThingDef ParentName="ApparelMakeableBase">
-		<defName>S_TankTop</defName>
+		<defName>S_Maika</defName>
 		<label>Maika</label>
 		<description>A sleeveless tank top, can be used as a napkin after snacks.</description>
 		<graphicData>
-			<texPath>Top/Maika</texPath>
+			<texPath>Things/Apparel/Maika/Maika</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
@@ -95,7 +95,7 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>/Top/Maika</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Maika/Maika</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -121,8 +121,9 @@
 		<label>Pidorka</label>
 		<description>replace.</description>
 		<graphicData>
-			<texPath>Hats/Pidorka</texPath>
+			<texPath>Things/Headgear/Pidorka/Pidorka</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
 		<tradeability>Sellable</tradeability>
@@ -152,7 +153,8 @@
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Hats/Pidorka</wornGraphicPath>
+			<wornGraphicPath>Things/Headgear/Pidorka/Pidorka</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -170,8 +172,126 @@
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />
     </ThingDef>
 
-
+ <!-- +++++ Abibas +++++ -->
+    <ThingDef ParentName="ApparelMakeableBase">
+		<defName>S_Abibas</defName>
+		<label>Abibas</label>
+		<description>Hardbass Abibas</description>
+		<graphicData>
+			<texPath>Things/Apparel/Abibas/Abibas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>1</generateCommonality>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>2200</WorkToMake>
+			<Mass>0.45</Mass>
+			<Flammability>0.2</Flammability>
+            <StuffEffectMultiplierArmor>0.32</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+		</equippedStatOffsets>
+    <thingCategories Inherit='False'>
+      <li>Apparel</li>
+    </thingCategories>
+		<apparel>
+			<bodyPartGroups>
+                <li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Abibas/Abibas</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>IndustrialAdvanced</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+            </defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Slav_Apparel</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+    </ThingDef>
+	
+<!-- Vatnik -->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>S_Vatnik</defName>
+    <description>Vatnik is famous soviet jacket which has helped people not to die from cold in more than a century.</description>
+    <label>Vatnik</label>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/Vatnik/Vatnik</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1.7</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Vatnik/Vatnik</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>IndustrialAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+		<recipeMaker>
+			<researchPrerequisite>Slav_Apparel</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+  </ThingDef>
+	
 </Defs>

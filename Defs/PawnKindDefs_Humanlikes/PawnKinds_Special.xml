@@ -58,10 +58,10 @@
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<apparelMoney>500</apparelMoney>
 		<apparelRequired>
-			<li>EE_Sportivki</li>
-			<li>EE_Maika</li>
-			<li>EE_Pidorka</li>
-			<li>EE_Abibas</li>
+			<li>S_Sportivki</li>
+			<li>S_Maika</li>
+			<li>S_Pidorka</li>
+			<li>S_Abibas</li>
 		</apparelRequired>
 	</PawnKindDef>
 </Defs>
