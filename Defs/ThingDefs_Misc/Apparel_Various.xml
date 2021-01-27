@@ -10,7 +10,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Apparel/Pants/Sportivki</texPath>
+      <texPath>Pants/Sportivki</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	<techLevel>Industrial</techLevel>
@@ -60,11 +60,11 @@
 
     <!-- +++++ Maika +++++ -->
     <ThingDef ParentName="ApparelMakeableBase">
-		<defName>Slav_TankTop</defName>
+		<defName>S_TankTop</defName>
 		<label>Maika</label>
 		<description>A sleeveless tank top, can be used as a napkin after snacks.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Top/Maika</texPath>
+			<texPath>Top/Maika</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
@@ -95,7 +95,7 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Top/Maika</wornGraphicPath>
+			<wornGraphicPath>/Top/Maika</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -115,6 +115,63 @@
 		</recipeMaker>
     </ThingDef>
 
+ <!-- +++++ Shapka Pidorka +++++ -->
+<ThingDef ParentName="HatMakeableBase">
+		<defName>S_Pidorka</defName>
+		<label>Pidorka</label>
+		<description>replace.</description>
+		<graphicData>
+			<texPath>Hats/Pidorka</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>0.25</generateCommonality>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.1</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat> <!-- hot -->
+            <EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CookSpeed>0.10</CookSpeed>
+			<FoodPoisonChance>-0.10</FoodPoisonChance>
+			<ButcheryFleshEfficiency>0.05</ButcheryFleshEfficiency>
+		</equippedStatOffsets>
+    <thingCategories Inherit='False'>
+      <li>Headgear</li>
+    </thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Hats/Pidorka</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>IndustrialBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+            </defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Slav_Apparel</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
 
 
 </Defs>
