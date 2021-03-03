@@ -6,7 +6,6 @@
 		<label>Slav Apparel</label>
 		<description>Hard Bass Abibas clothing.</description>
 		<baseCost>250</baseCost>
-		<tab>SlavApparel</tab>
 		<techLevel>Medieval</techLevel>
 		<prerequisites>
 			<li>ComplexClothing</li>

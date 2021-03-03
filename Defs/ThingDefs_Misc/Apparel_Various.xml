@@ -4,16 +4,13 @@
   <!-- +++++ Sportivki +++++ -->
   <ThingDef ParentName="ApparelMakeableBase" Name="Sportivki">
     <defName>S_Sportivki</defName>
-    <label>sportivki</label>
+    <label>Sportivki</label>
     <description>Sporty pants with stripes on the sides. Suits every occasion, weddings the most.</description>
-    <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
-    </recipeMaker>
     <graphicData>
       <texPath>Things/Apparel/Pants/Sportivki</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
-    </graphicData>
+			<shaderType>CutoutComplex</shaderType>
+	</graphicData>
 	<techLevel>Industrial</techLevel>
 	<tradeability>Sellable</tradeability>
     <generateCommonality>0.35</generateCommonality>
@@ -41,6 +38,7 @@
       <layers>
         <li>OnSkin</li>
       </layers>
+	  <useWornGraphicMask>true</useWornGraphicMask>
       <tags>
         <li>IndustrialBasic</li>
       </tags>
@@ -77,7 +75,7 @@
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>1000</WorkToMake>
+			<WorkToMake>950</WorkToMake>
 			<Mass>0.27</Mass>
             <StuffEffectMultiplierArmor>0.18</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
@@ -177,10 +175,10 @@
 <!-- +++++ Kepi +++++ -->
     <ThingDef ParentName="HatMakeableBase">
 		<defName>S_Kepi</defName>
-		<label>Flat Cap</label>
-		<description>Industrial workers hat. Was popular among workers in 20th century and among gopniks in all eras.</description>
+		<label>Kepi</label>
+		<description>Industrial leather workers hat. Was popular among workers in 20th century and among gopniks in all eras.</description>
 		<graphicData>
-			<texPath>Things/Headgear/Kepi</texPath>
+			<texPath>Things/Headgear/Kepi/Kepi</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
@@ -211,7 +209,65 @@
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Headgear/Kepi</wornGraphicPath>
+			<wornGraphicPath>Things/Headgear/Kepi/Kepi</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>IndustrialBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+            </defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>Slav_Apparel</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+	
+	<!-- +++++ Keparik +++++ -->
+    <ThingDef ParentName="HatMakeableBase">
+		<defName>S_Keparik</defName>
+		<label>Keparik</label>
+		<description>Popular among gopniks.</description>
+		<graphicData>
+			<texPath>Things/Headgear/Keparik/Keparik</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>1</generateCommonality>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>0.09</Mass>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat> <!-- seems a lot -->
+            <EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.10</MoveSpeed>
+			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+		</equippedStatOffsets>
+    <thingCategories Inherit='False'>
+      <li>Headgear</li>
+    </thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Headgear/Keparik/Keparik</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -269,7 +325,6 @@
     </thingCategories>
 		<apparel>
 			<bodyPartGroups>
-                <li>Neck</li>
 				<li>Torso</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
@@ -277,7 +332,7 @@
 			<wornGraphicPath>Things/Apparel/Abibas/Abibas</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
-				<li>OnSkin</li>
+				<li>Shell</li>
 			</layers>
 			<tags>
 				<li>IndustrialAdvanced</li>
@@ -300,9 +355,6 @@
     <defName>S_Vatnik</defName>
     <description>Vatnik is famous soviet jacket which has helped people not to die from cold in circumstances when it is basically impossible.</description>
     <label>Vatnik</label>
-    <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
-    </recipeMaker>
     <graphicData>
       <texPath>Things/Apparel/Vatnik/Vatnik</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -337,7 +389,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>IndustrialAdvanced</li>
+        <li>IndustrialBasic</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
