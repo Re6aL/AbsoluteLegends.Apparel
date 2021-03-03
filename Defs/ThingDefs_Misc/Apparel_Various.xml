@@ -32,7 +32,8 @@
       <EquipDelay>1.8</EquipDelay>
     </statBases>
     <apparel>
-      <bodyPartGroups>
+      <wornGraphicPath>Urbb/Urbb</wornGraphicPath>
+	  <bodyPartGroups>
         <li>Legs</li>
       </bodyPartGroups>
       <layers>
