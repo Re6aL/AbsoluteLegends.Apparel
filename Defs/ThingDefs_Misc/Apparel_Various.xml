@@ -114,182 +114,84 @@
 		</recipeMaker>
     </ThingDef>
 
- <!-- +++++ Shapka Pidorka +++++ -->
-<ThingDef ParentName="HatMakeableBase">
-		<defName>S_Pidorka</defName>
-		<label>Pidorka</label>
-		<description>replace.</description>
-		<graphicData>
-			<texPath>Things/Headgear/Pidorka/Pidorka</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<techLevel>Industrial</techLevel>
-		<tradeability>Sellable</tradeability>
-        <generateCommonality>0.25</generateCommonality>
-		<costStuffCount>30</costStuffCount>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>2000</WorkToMake>
-			<Mass>0.1</Mass>
-            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat> <!-- hot -->
-            <EquipDelay>0.8</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<CookSpeed>0.10</CookSpeed>
-			<FoodPoisonChance>-0.10</FoodPoisonChance>
-			<ButcheryFleshEfficiency>0.05</ButcheryFleshEfficiency>
-		</equippedStatOffsets>
-    <thingCategories Inherit='False'>
-      <li>Headgear</li>
-    </thingCategories>
-		<apparel>
-			<bodyPartGroups>
-				<li>UpperHead</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Headgear/Pidorka/Pidorka</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
-			<layers>
-				<li>Overhead</li>
-			</layers>
-			<tags>
-				<li>IndustrialBasic</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Worker</li>
-            </defaultOutfitTags>
-		</apparel>
-		<recipeMaker>
-			<researchPrerequisite>Slav_Apparel</researchPrerequisite>
-			<recipeUsers Inherit="False">
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
-			</recipeUsers>
-		</recipeMaker>
-    </ThingDef>
 
-<!-- +++++ Kepi +++++ -->
-    <ThingDef ParentName="HatMakeableBase">
-		<defName>S_Kepi</defName>
-		<label>Kepi</label>
-		<description>Industrial leather workers hat. Was popular among workers in 20th century and among gopniks in all eras.</description>
-		<graphicData>
-			<texPath>Things/Headgear/Kepi/Kepi</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<techLevel>Industrial</techLevel>
-		<tradeability>Sellable</tradeability>
-        <generateCommonality>1</generateCommonality>
-		<costStuffCount>20</costStuffCount>
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>1500</WorkToMake>
-			<Mass>0.09</Mass>
-            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat> <!-- seems a lot -->
-            <EquipDelay>0.8</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>0.10</MoveSpeed>
-			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
-		</equippedStatOffsets>
-    <thingCategories Inherit='False'>
-      <li>Headgear</li>
-    </thingCategories>
-		<apparel>
-			<bodyPartGroups>
-				<li>UpperHead</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Headgear/Kepi/Kepi</wornGraphicPath>
-			<layers>
-				<li>Overhead</li>
-			</layers>
-			<tags>
-				<li>IndustrialBasic</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Worker</li>
-            </defaultOutfitTags>
-		</apparel>
-		<recipeMaker>
-			<researchPrerequisite>Slav_Apparel</researchPrerequisite>
-			<recipeUsers Inherit="False">
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />
-    </ThingDef>
-	
-	<!-- +++++ Keparik +++++ -->
-    <ThingDef ParentName="HatMakeableBase">
-		<defName>S_Keparik</defName>
-		<label>Keparik</label>
-		<description>Popular among gopniks.</description>
-		<graphicData>
-			<texPath>Things/Headgear/Keparik/Keparik</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<techLevel>Industrial</techLevel>
-		<tradeability>Sellable</tradeability>
-        <generateCommonality>1</generateCommonality>
-		<costStuffCount>20</costStuffCount>
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>1500</WorkToMake>
-			<Mass>0.09</Mass>
-            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat> <!-- seems a lot -->
-            <EquipDelay>0.8</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>0.10</MoveSpeed>
-			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
-		</equippedStatOffsets>
-    <thingCategories Inherit='False'>
-      <li>Headgear</li>
-    </thingCategories>
-		<apparel>
-			<bodyPartGroups>
-				<li>UpperHead</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Headgear/Keparik/Keparik</wornGraphicPath>
-			<layers>
-				<li>Overhead</li>
-			</layers>
-			<tags>
-				<li>IndustrialBasic</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Worker</li>
-            </defaultOutfitTags>
-		</apparel>
-		<recipeMaker>
-			<researchPrerequisite>Slav_Apparel</researchPrerequisite>
-			<recipeUsers Inherit="False">
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />
-    </ThingDef>
-
- <!-- +++++ Abibas +++++ -->
+<ThingDef ParentName="ApparelBase">
+    <defName>Apparel_BekkitSportSuit</defName>
+    <description>Best reliable clothing. Universal suit for all situations.</description>
+    <label>Reliable Sport Suit</label>
+    <graphicData>
+      <texPath>Things/Apparel/BekkShell/Serpsport</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<techLevel>Industrial</techLevel>
+	<recipeMaker>
+    <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    <skillRequirements>
+    <Crafting>6</Crafting>
+      </skillRequirements>
+	  <workSkill>Crafting</workSkill>
+	  <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+	  <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+      </recipeUsers>
+	 </recipeMaker>
+  <tickerType>Normal</tickerType>
+  <thingCategories>
+      <li>Apparel</li>
+  </thingCategories>
+  	<costList>
+      <Cloth>50</Cloth>
+    </costList>
+  <statBases>
+    <WorkToMake>2500</WorkToMake>
+	<MarketValue>200</MarketValue>
+    <MaxHitPoints>250</MaxHitPoints>
+	<Mass>0.20</Mass>
+	<Flammability>0.5</Flammability>
+    <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+    <StuffEffectMultiplierInsulation_Cold>9</StuffEffectMultiplierInsulation_Cold>
+    <StuffEffectMultiplierInsulation_Heat>9</StuffEffectMultiplierInsulation_Heat>
+    <EquipDelay>1.5</EquipDelay>
+  </statBases>
+  <equippedStatOffsets>
+	  <AimingDelayFactor>-0.05</AimingDelayFactor>
+	  <SocialImpact>0.05</SocialImpact>
+      <MeleeDodgeChance>0.10</MeleeDodgeChance>
+	  <WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+  </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/BekkShell/Serpsport</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>Industrial</li>
+      </tags>
+      <defaultOutfitTags>
+			<li>Soldier</li>
+      </defaultOutfitTags>
+	  <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>3</weight>
+          <only>(255,255,255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+	<thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+  </ThingDef>
+ <!-- +++++ Kostum Tri Poloski +++++ -->
     <ThingDef ParentName="ApparelMakeableBase">
 		<defName>S_Abibas</defName>
 		<label>Abibas</label>
@@ -405,5 +307,14 @@
 			</recipeUsers>
 		</recipeMaker>
   </ThingDef>
-	
+
+<!--Mentoforma-->
+<!--specnaz suit-->
+<!--backwards hat-->
+<!--Pirate patch/jacket-->
+<!--Prison robe-->
+<!--Slav Shirt-->
+<!--Galoshi-->
+<!--telnyaha-->
+
 </Defs>
