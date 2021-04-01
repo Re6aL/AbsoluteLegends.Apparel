@@ -1,12 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Slav Apparel</name>
+  <name>Absolute Legends Apparel</name>
   <author>RE6AL</author>
   <supportedVersions>
     <li>1.2</li>
   </supportedVersions>
-  <packageId>Slav.Apparel</packageId>
-  <description>This mod adds vanilla style eastern Europe apparel to the Rim. Because RAS RAS RAS this is HARDBASS, everybody wear SPORTIVKI ADIDAS.</description>
+  <packageId>A.L.Apparel</packageId>
+  <description>Vanilla style Eastern Europe apparel. Cuz thats where I live and... I believe in a world of cannibalism and raids there must be chracters from around here. Without Gopniks Rimworld seems a bit off.. They are the real pirates of modern day and age.
+
+ Wait...Do you hear it??...
+
+  	...RAS RAS RAS this is HARDBASS, everybody wear SPORTIVKI ABIBAS, и на найке пацаны...</description>
   <loadAfter>
   </loadAfter>
 </ModMetaData>
