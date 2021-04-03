@@ -185,7 +185,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Apparel/Headgear/PeakedCap</texPath>
+      <texPath>Things/Headgear/PeakedCap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <costStuffCount>30</costStuffCount>
@@ -209,7 +209,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Apparel/Headgear/PeakedCap</wornGraphicPath>
+      <wornGraphicPath>Things/Headgear/PeakedCap</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -247,7 +247,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Apparel/Headgear/BCap</texPath>
+      <texPath>Things/Headgear/BCap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <costStuffCount>20</costStuffCount>
@@ -270,7 +270,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Apparel/Headgear/BCap</wornGraphicPath>
+      <wornGraphicPath>Things/Headgear/BCap</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -309,7 +309,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Apparel/Headgear/Tricorn</texPath>
+      <texPath>Things/Headgear/Tricorn</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <costStuffCount>30</costStuffCount>
@@ -332,7 +332,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Apparel/Headgear/Tricorn</wornGraphicPath>
+      <wornGraphicPath>Things/Headgear/Tricorn</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -371,7 +371,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Apparel/Headgear/ReliableUshanka</texPath>
+      <texPath>Things/Headgear/ReliableUshanka</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <costStuffCount>30</costStuffCount>
@@ -395,7 +395,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Apparel/Headgear/ReliableUshanka</wornGraphicPath>
+      <wornGraphicPath>Things/Headgear/ReliableUshanka</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
