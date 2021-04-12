@@ -2,9 +2,10 @@
 <Defs>
 
   <!-- +++++ Sportivki +++++ -->
+
   <ThingDef ParentName="ApparelMakeableBase" Name="Sportivki">
-    <defName>S_Sportivki</defName>
-    <label>Sportivki</label>
+    <defName>AL_Sportivki</defName>
+    <label>"Sportivki" Pants</label>
     <description>Sporty pants with stripes on the sides. Suits every occasion, weddings the most.</description>
     <graphicData>
       <texPath>Things/Apparel/Pants/Sportivki</texPath>
@@ -49,7 +50,7 @@
       </defaultOutfitTags>
     </apparel>
 	<recipeMaker>
-			<researchPrerequisite>Slav_Apparel</researchPrerequisite>
+			<researchPrerequisite>AL_Apparel</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
@@ -58,10 +59,11 @@
   </ThingDef>
 
     <!-- +++++ Maika +++++ -->
+
     <ThingDef ParentName="ApparelMakeableBase">
-		<defName>S_Maika</defName>
-		<label>Maika</label>
-		<description>A sleeveless tank top, can be used as a napkin after snacks.</description>
+		<defName>AL_Maika</defName>
+		<label>"Maika"</label>
+		<description>A thin dirty sleeveless tank top, looks like it was used as a napkin after snacks.</description>
 		<graphicData>
 			<texPath>Things/Apparel/Maika/Maika</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -76,11 +78,11 @@
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>950</WorkToMake>
+			<WorkToMake>850</WorkToMake>
 			<Mass>0.27</Mass>
             <StuffEffectMultiplierArmor>0.18</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>2</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -103,10 +105,10 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
-            </defaultOutfitTags>
+      </defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>Slav_Apparel</researchPrerequisite>
+			<researchPrerequisite>AL_Apparel</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
@@ -115,87 +117,12 @@
     </ThingDef>
 
 
-<ThingDef ParentName="ApparelBase">
-    <defName>Apparel_BekkitSportSuit</defName>
-    <description>Best reliable clothing. Universal suit for all situations.</description>
-    <label>Reliable Sport Suit</label>
-    <graphicData>
-      <texPath>Things/Apparel/BekkShell/Serpsport</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	<techLevel>Industrial</techLevel>
-	<recipeMaker>
-    <researchPrerequisite>ComplexClothing</researchPrerequisite>
-    <skillRequirements>
-    <Crafting>6</Crafting>
-      </skillRequirements>
-	  <workSkill>Crafting</workSkill>
-	  <effectWorking>Tailor</effectWorking>
-      <soundWorking>Recipe_Tailor</soundWorking>
-	  <recipeUsers Inherit="False">
-        <li>ElectricTailoringBench</li>
-      </recipeUsers>
-	 </recipeMaker>
-  <tickerType>Normal</tickerType>
-  <thingCategories>
-      <li>Apparel</li>
-  </thingCategories>
-  	<costList>
-      <Cloth>50</Cloth>
-    </costList>
-  <statBases>
-    <WorkToMake>2500</WorkToMake>
-	<MarketValue>200</MarketValue>
-    <MaxHitPoints>250</MaxHitPoints>
-	<Mass>0.20</Mass>
-	<Flammability>0.5</Flammability>
-    <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
-    <StuffEffectMultiplierInsulation_Cold>9</StuffEffectMultiplierInsulation_Cold>
-    <StuffEffectMultiplierInsulation_Heat>9</StuffEffectMultiplierInsulation_Heat>
-    <EquipDelay>1.5</EquipDelay>
-  </statBases>
-  <equippedStatOffsets>
-	  <AimingDelayFactor>-0.05</AimingDelayFactor>
-	  <SocialImpact>0.05</SocialImpact>
-      <MeleeDodgeChance>0.10</MeleeDodgeChance>
-	  <WorkSpeedGlobal>0.15</WorkSpeedGlobal>
-  </equippedStatOffsets>
-    <apparel>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Things/Apparel/BekkShell/Serpsport</wornGraphicPath>
-      <layers>
-        <li>Shell</li>
-      </layers>
-      <tags>
-        <li>Industrial</li>
-      </tags>
-      <defaultOutfitTags>
-			<li>Soldier</li>
-      </defaultOutfitTags>
-	  <useDeflectMetalEffect>true</useDeflectMetalEffect>
-    </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>3</weight>
-          <only>(255,255,255)</only>
-        </li>
-      </options>
-    </colorGenerator>
-	<thingSetMakerTags>
-      <li>RewardSpecial</li>
-    </thingSetMakerTags>
-  </ThingDef>
  <!-- +++++ Kostum Tri Poloski +++++ -->
+
     <ThingDef ParentName="ApparelMakeableBase">
-		<defName>S_Abibas</defName>
-		<label>Abibas</label>
-		<description>Hardbass Abibas</description>
+		<defName>AL_Abibas</defName>
+		<label>Abibas Tracksuit</label>
+		<description>Three stripes on your shoulders say it without words. You just need some beer and a hardbass soundtrack. Thats your life.</description>
 		<graphicData>
 			<texPath>Things/Apparel/Abibas/Abibas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -204,7 +131,7 @@
 		<techLevel>Industrial</techLevel>
 		<tradeability>Sellable</tradeability>
         <generateCommonality>1</generateCommonality>
-		<costStuffCount>80</costStuffCount>
+		<costStuffCount>70</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
@@ -212,16 +139,19 @@
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>2200</WorkToMake>
-			<Mass>0.45</Mass>
-			<Flammability>0.2</Flammability>
+			<Mass>0.30</Mass>
+			<Flammability>0.4</Flammability>
             <StuffEffectMultiplierArmor>0.32</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>1.5</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<WorkSpeedGlobal>0.10</WorkSpeedGlobal>
-			<MoveSpeed>0.19</MoveSpeed>
+			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+			<MoveSpeed>0.17</MoveSpeed>
+      <AimingDelayFactor>-0.10</AimingDelayFactor>
+      <SocialImpact>0.05</SocialImpact>
+      <MeleeDodgeChance>0.10</MeleeDodgeChance>
 		</equippedStatOffsets>
     <thingCategories Inherit='False'>
       <li>Apparel</li>
@@ -238,14 +168,15 @@
 				<li>Shell</li>
 			</layers>
 			<tags>
-				<li>IndustrialAdvanced</li>
+				<li>Industrial</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>Worker</li>
-            </defaultOutfitTags>
+				<li>Soldier</li>
+        <li>Worker</li>
+      </defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>Slav_Apparel</researchPrerequisite>
+			<researchPrerequisite>AL_Apparel</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
@@ -255,8 +186,8 @@
 	
 <!-- Vatnik -->
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>S_Vatnik</defName>
-    <description>Vatnik is famous soviet jacket which has helped people not to die from cold in circumstances when it is basically impossible.</description>
+    <defName>AL_Vatnik</defName>
+    <description>Vatnik is famous soviet jacket which has helped people not to die from cold in circumstances when it is was basically impossible.</description>
     <label>Vatnik</label>
     <graphicData>
       <texPath>Things/Apparel/Vatnik/Vatnik</texPath>
@@ -300,21 +231,12 @@
       </defaultOutfitTags>
     </apparel>
 		<recipeMaker>
-			<researchPrerequisite>Slav_Apparel</researchPrerequisite>
+			<researchPrerequisite>AL_Apparel</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
   </ThingDef>
-
-<!--Mentoforma-->
-<!--specnaz suit-->
-<!--backwards hat-->
-<!--Pirate patch/jacket-->
-<!--Prison robe-->
-<!--Slav Shirt-->
-<!--Galoshi-->
-<!--telnyaha-->
 
 </Defs>
