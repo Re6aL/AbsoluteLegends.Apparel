@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<IncidentDef>
-		<defName>Slav_MysteriousGopnikJoin</defName>
-		<label>mysterious gopnik</label>
+		<defName>AL_MysteriousGopnikJoin</defName>
+		<label>Mysterious Gopnik</label>
 		<category>Special</category>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<workerClass>IncidentWorker_WandererJoin</workerClass>
-		<letterLabel>Mysterious Gopnik appears</letterLabel>
-		<letterText>Sensing vodka, a Mysterious [PAWN_kind] has arrived.\n\nWill [PAWN_pronoun] find any Vodka here?</letterText>
-		<baseChance>0.4</baseChance>
-		<minRefireDays>30</minRefireDays>
+		<letterLabel>Mysterious Gopnik detected</letterLabel>
+		<letterText>Sensing vodka, a Mysterious [PAWN_kind] came to the walls of your colony.\n\nWill [PAWN_pronoun] find any Vodka or beer here?</letterText>
+		<baseChance>0.42</baseChance>
+		<minRefireDays>15</minRefireDays>
 		<minGreatestPopulation>2</minGreatestPopulation>
-		<pawnKind>Stranger</pawnKind>
+		<pawnKind>Gopnik</pawnKind>
 		<pawnFixedGender></pawnFixedGender>
 		<pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
 	</IncidentDef>

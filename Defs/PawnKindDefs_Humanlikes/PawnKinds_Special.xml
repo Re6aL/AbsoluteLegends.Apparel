@@ -24,7 +24,11 @@
 		<skills>
 			<li>
 				<skill>Shooting</skill>
-				<range>8~16</range>
+				<range>7~18</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>4~20</range>
 			</li>
 		</skills>
 		<requiredWorkTags>
@@ -33,19 +37,24 @@
 			<li>Firefighting</li>
 			<li>Hauling</li>
 		</requiredWorkTags>
-		<invNutrition>10.0</invNutrition>
+		<invNutrition>7.0</invNutrition>
 		<inventoryOptions>
 			<subOptionsChooseOne>
 				<li>
 					<thingDef>MedicineIndustrial</thingDef>
-					<countRange>2</countRange>
+					<countRange>3</countRange>
+				</li>
+				<li>
+					<thingDef>Beer</thingDef>
+					<countRange>12</countRange>
 				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
 		<gearHealthRange>1~1</gearHealthRange>
-		<itemQuality>Excellent</itemQuality>
-		<weaponMoney>675~675</weaponMoney>
+		<itemQuality>Normal</itemQuality>
+		<weaponMoney>450~630</weaponMoney>
 		<weaponTags>
+			<li>SimpleGun</li>
 			<li>Revolver</li>
 		</weaponTags>
 		<apparelTags>
@@ -58,10 +67,10 @@
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<apparelMoney>500</apparelMoney>
 		<apparelRequired>
-			<li>S_Sportivki</li>
-			<li>S_Maika</li>
-			<li>S_Pidorka</li>
-			<li>S_Abibas</li>
+			<li>AL_Sportivki</li>
+			<li>AL_Maika</li>
+			<li>AL_Pidorka</li>
+			<li>AL_Abibas</li>
 		</apparelRequired>
 	</PawnKindDef>
 </Defs>

@@ -33,7 +33,7 @@
       <EquipDelay>1.8</EquipDelay>
     </statBases>
     <apparel>
-      <wornGraphicPath>Urbb/Urbb</wornGraphicPath>
+      <wornGraphicPath>Sportivki/Sportivki</wornGraphicPath>
 	  <bodyPartGroups>
         <li>Legs</li>
       </bodyPartGroups>
@@ -117,7 +117,7 @@
     </ThingDef>
 
 
- <!-- +++++ Kostum Tri Poloski +++++ -->
+ <!-- +++++ ABIBAS Tri Poloski +++++ -->
 
     <ThingDef ParentName="ApparelMakeableBase">
 		<defName>AL_Abibas</defName>
@@ -150,7 +150,7 @@
 			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
 			<MoveSpeed>0.17</MoveSpeed>
       <AimingDelayFactor>-0.10</AimingDelayFactor>
-      <SocialImpact>0.05</SocialImpact>
+      <SocialImpact>0.15</SocialImpact>
       <MeleeDodgeChance>0.10</MeleeDodgeChance>
 		</equippedStatOffsets>
     <thingCategories Inherit='False'>
@@ -163,7 +163,7 @@
 				<li>Arms</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/Abibas/Abibas</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
+      <useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Shell</li>
 			</layers>
@@ -182,6 +182,7 @@
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
     </ThingDef>
 	
 <!-- Vatnik -->
@@ -237,6 +238,7 @@
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
 </Defs>

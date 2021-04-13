@@ -3,7 +3,7 @@
 
  <!-- +++++ Shapka Pidorka +++++ -->
 <ThingDef ParentName="HatMakeableBase">
-		<defName>S_Pidorka</defName>
+		<defName>AL_Pidorka</defName>
 		<label>Pidorka</label>
 		<description>...placeholder...</description>
 		<graphicData>
@@ -52,7 +52,7 @@
             </defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>Slav_Apparel</researchPrerequisite>
+			<researchPrerequisite>AL_Apparel</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
@@ -62,7 +62,7 @@
 
 <!-- +++++ Kepi +++++ -->
     <ThingDef ParentName="HatMakeableBase">
-		<defName>S_Kepi</defName>
+		<defName>AL_Kepi</defName>
 		<label>Kepi</label>
 		<description>Industrial leather workers hat. Was popular among workers in 20th century and among gopniks in all eras.</description>
 		<graphicData>
@@ -109,7 +109,7 @@
             </defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>Slav_Apparel</researchPrerequisite>
+			<researchPrerequisite>AL_Apparel</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
@@ -120,7 +120,7 @@
 	
 	<!-- +++++ panama +++++ -->
     <ThingDef ParentName="HatMakeableBase">
-		<defName>S_Panama</defName>
+		<defName>AL_Panama</defName>
 		<label>Panama</label>
 		<description>Wassuuuup my dudes!</description>
 		<graphicData>
@@ -167,7 +167,7 @@
             </defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>Slav_Apparel</researchPrerequisite>
+			<researchPrerequisite>AL_Apparel</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
@@ -240,7 +240,7 @@
 
 <!--backwards hat-->  
   <ThingDef ParentName="HatMakeableBase">
-    <defName>AL_BCap</defName>
+    <defName>AL_BwCap</defName>
     <label>backwards cap</label>
     <description>A backwards baseball cap. does not provide shade to the eyes and also makes you look like a bit of a twat.</description>
     <recipeMaker>
