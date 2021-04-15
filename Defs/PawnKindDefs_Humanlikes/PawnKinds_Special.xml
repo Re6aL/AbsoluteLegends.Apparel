@@ -10,7 +10,7 @@
 		<defaultFactionType>OutlanderCivil</defaultFactionType>
 		<combatPower>100</combatPower>
 		<minGenerationAge>16</minGenerationAge>
-		<maxGenerationAge>55</maxGenerationAge>
+		<maxGenerationAge>33</maxGenerationAge>
 		<isFighter>true</isFighter>
 		<chemicalAddictionChance>0.1</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0.10</backstoryCryptosleepCommonality>
@@ -24,7 +24,7 @@
 		<skills>
 			<li>
 				<skill>Shooting</skill>
-				<range>7~18</range>
+				<range>4~17</range>
 			</li>
 			<li>
 				<skill>Melee</skill>
@@ -46,16 +46,17 @@
 				</li>
 				<li>
 					<thingDef>Beer</thingDef>
-					<countRange>12</countRange>
+					<countRange>13</countRange>
 				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
-		<gearHealthRange>1~1</gearHealthRange>
+		<gearHealthRange>0.5~1</gearHealthRange>
 		<itemQuality>Normal</itemQuality>
-		<weaponMoney>450~630</weaponMoney>
+		<weaponMoney>250~400</weaponMoney>
 		<weaponTags>
 			<li>SimpleGun</li>
 			<li>Revolver</li>
+			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<apparelTags>
 			<li>Industrial</li>
@@ -65,7 +66,7 @@
 			<li>IndustrialMilitaryAdvanced</li>
 		</apparelTags>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-		<apparelMoney>500</apparelMoney>
+		<apparelMoney>250</apparelMoney>
 		<apparelRequired>
 			<li>AL_Sportivki</li>
 			<li>AL_Maika</li>

@@ -2,19 +2,19 @@
 <Defs>
 	<IncidentDef>
 		<defName>AL_MysteriousGopnikJoin</defName>
-		<label>Mysterious Gopnik</label>
+		<label>Gopnik seeks company</label>
 		<category>Special</category>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
 		<workerClass>IncidentWorker_WandererJoin</workerClass>
-		<letterLabel>Mysterious Gopnik detected</letterLabel>
-		<letterText>Sensing vodka, a Mysterious [PAWN_kind] came to the walls of your colony.\n\nWill [PAWN_pronoun] find any Vodka or beer here?</letterText>
-		<baseChance>0.42</baseChance>
-		<minRefireDays>15</minRefireDays>
-		<minGreatestPopulation>2</minGreatestPopulation>
+		<letterLabel>Gopnik in search of a squad</letterLabel>
+		<letterText>"We raided a drug store, but they shot Dimon, and captured Andrey." - [PAWN_kind] says.\n\n [PAWN_pronoun] is looking for a new squad, perhaps they can join yours? Gopnikmay have beer on him as a welcoming gesture.</letterText>
+		<baseChance>0.01</baseChance>
+		<minRefireDays>55</minRefireDays>
+		<minGreatestPopulation>3</minGreatestPopulation>
 		<pawnKind>Gopnik</pawnKind>
-		<pawnFixedGender></pawnFixedGender>
+		<pawnFixedGender>Male</pawnFixedGender>
 		<pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
 	</IncidentDef>
 </Defs>
