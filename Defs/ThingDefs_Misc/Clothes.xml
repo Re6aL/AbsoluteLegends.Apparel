@@ -5,8 +5,8 @@
 
   <ThingDef ParentName="ApparelMakeableBase" Name="Sportivki">
     <defName>AL_Sportivki</defName>
-    <label>"Sportivki" Pants</label>
-    <description>Sporty pants with stripes on the sides. Suits every occasion, weddings the most.</description>
+    <label>sporty striped pants</label>
+    <description>Sporty pants with stripes on the sides. Suits every occasion, weddings for example.</description>
     <graphicData>
       <texPath>Things/Apparel/Pants/Sportivki</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -121,8 +121,8 @@
 
     <ThingDef ParentName="ApparelMakeableBase">
 		<defName>AL_Abibas</defName>
-		<label>Abibas Tracksuit</label>
-		<description>Three stripes on your shoulders say it without words. You just need some beer and a hardbass soundtrack. Thats your life.</description>
+		<label>Abibas tracksuit</label>
+		<description>Three stripes on sleeves say it all. You just need some beer and a hardbass soundtrack. Thats your style.</description>
 		<graphicData>
 			<texPath>Things/Apparel/Abibas/Abibas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -188,8 +188,8 @@
 <!-- Vatnik -->
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>AL_Vatnik</defName>
-    <description>Vatnik is famous soviet jacket which has helped people not to die from cold in circumstances when it is was basically impossible.</description>
     <label>Vatnik</label>
+    <description>Vatnik is famous soviet jacket which has helped people not to die from cold in circumstances when it is was basically impossible.</description>
     <graphicData>
       <texPath>Things/Apparel/Vatnik/Vatnik</texPath>
       <graphicClass>Graphic_Single</graphicClass>
