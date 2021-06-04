@@ -214,7 +214,7 @@
       <bodyPartGroups>
             <li>Legs</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/officer/PantsOfficer</wornGraphicPath>
+      <wornGraphicPath>officer/PantsOfficer</wornGraphicPath>
       <layers>
         <li>OnSkin</li>
       </layers>
