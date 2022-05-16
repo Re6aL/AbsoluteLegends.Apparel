@@ -77,7 +77,7 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
+			<MaxHitPoints>110</MaxHitPoints>
 			<WorkToMake>850</WorkToMake>
 			<Mass>0.27</Mass>
             <StuffEffectMultiplierArmor>0.18</StuffEffectMultiplierArmor>
@@ -121,8 +121,8 @@
 
     <ThingDef ParentName="ApparelMakeableBase">
 		<defName>AL_Abibas</defName>
-		<label>Abibas tracksuit</label>
-		<description>Three stripes on sleeves say it all. You just need some beer and a hardbass soundtrack. Thats your style.</description>
+		<label>Abibas sport suit</label>
+		<description>Stripes say it all. You just need some beer, sunflowers and a hardbass soundtrack.</description>
 		<graphicData>
 			<texPath>Things/Apparel/Abibas/Abibas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -189,7 +189,7 @@
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>AL_Vatnik</defName>
     <label>Vatnik</label>
-    <description>Vatnik is famous soviet jacket which has helped people not to die from cold in circumstances when it is was basically impossible.</description>
+    <description>Vatnik is famous soviet jacket that helped people not to die from cold in impossible circumstances.</description>
     <graphicData>
       <texPath>Things/Apparel/Vatnik/Vatnik</texPath>
       <graphicClass>Graphic_Single</graphicClass>

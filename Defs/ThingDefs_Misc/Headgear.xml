@@ -5,7 +5,7 @@
 <ThingDef ParentName="HatMakeableBase">
 		<defName>AL_Pidorka</defName>
 		<label>Pidorka</label>
-		<description>...placeholder...</description>
+		<description>Abibas hat with three stripes. Hot, so wear slightly misplaced on the back of your head.</description>
 		<graphicData>
 			<texPath>Things/Headgear/Pidorka/Pidorka</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -19,12 +19,12 @@
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
+			<MaxHitPoints>80</MaxHitPoints>
 			<WorkToMake>2000</WorkToMake>
 			<Mass>0.1</Mass>
             <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat> <!-- hot -->
+            <StuffEffectMultiplierInsulation_Cold>0.9</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat> <!-- hot -->
             <EquipDelay>0.8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -60,13 +60,13 @@
 		</recipeMaker>
     </ThingDef>
 
-<!-- +++++ Kepi +++++ -->
+<!-- +++++ ducky cap +++++ -->
     <ThingDef ParentName="HatMakeableBase">
-		<defName>AL_Kepi</defName>
-		<label>Kepi</label>
+		<defName>AL_ducky</defName>
+		<label>ducky cap</label>
 		<description>Industrial leather workers hat. Was popular among workers in 20th century and among gopniks in all eras.</description>
 		<graphicData>
-			<texPath>Things/Headgear/Kepi/Kepi</texPath>
+			<texPath>Things/Headgear/ducky</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
@@ -97,7 +97,7 @@
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Headgear/Kepi/Kepi</wornGraphicPath>
+			<wornGraphicPath>Things/Headgear/ducky</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -118,14 +118,15 @@
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
     </ThingDef>
 	
-	<!-- +++++ panama +++++ -->
+	<!-- +++++ bucket hat +++++ -->
     <ThingDef ParentName="HatMakeableBase">
-		<defName>AL_Panama</defName>
-		<label>Panama</label>
+		<defName>AL_BucketHat</defName>
+		<label>Bucket hat</label>
 		<description>Wassuuuup my dudes!</description>
 		<graphicData>
-			<texPath>Things/Headgear/Panama/Panama</texPath>
+			<texPath>Things/Headgear/BucketHat/BucketHat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
 		<tradeability>Sellable</tradeability>
@@ -155,7 +156,7 @@
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Headgear/Panama/Panama</wornGraphicPath>
+			<wornGraphicPath>Things/Headgear/BucketHat/BucketHat</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
@@ -176,7 +177,7 @@
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
     </ThingDef>
 
-<!--Furazhka-->
+<!--Furazhka->
 <ThingDef ParentName="HatMakeableBase">
     <defName>AL_Furazhka</defName>
     <label>Furazhka (peaked cap)</label>
@@ -236,7 +237,7 @@
         </li>
       </options>
     </colorGenerator>
-  </ThingDef>
+  </ThingDef-->
 
 <!--backwards hat-->  
   <ThingDef ParentName="HatMakeableBase">
@@ -371,7 +372,7 @@
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Headgear/ReliableUshanka</texPath>
+      <texPath>Things/Headgear/Ushanka</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <costStuffCount>30</costStuffCount>
@@ -395,7 +396,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Headgear/ReliableUshanka</wornGraphicPath>
+      <wornGraphicPath>Things/Headgear/Ushanka</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
