@@ -3,9 +3,9 @@
 
 	<ResearchProjectDef>
 		<defName>AL_Apparel</defName>
-		<label>Legends Apparel</label>
-		<description>Stupid clothes that are found in poor low-life regions (Eastern Europe) they are comfortable and useful. Rimworld now gets Eastern-Europeed on =)</description>
-		<baseCost>250</baseCost>
+		<label>Legendary Apparel</label>
+		<description>Stupid clothes that are found in poor low-life regions (Eastern Europe) they are comfortable and useful. Rimworld now gets Eastern-Europeed on xD</description>
+		<baseCost>150</baseCost>
 		<techLevel>Medieval</techLevel>
 		<prerequisites>
 			<li>ComplexClothing</li>
