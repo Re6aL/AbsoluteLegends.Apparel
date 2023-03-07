@@ -4,8 +4,8 @@
  <!-- +++++ Shapka Pidorka +++++ -->
 <ThingDef ParentName="HatMakeableBase">
 		<defName>AL_Pidorka</defName>
-		<label>Pidorka</label>
-		<description>Abibas hat with three stripes. Hot, so wear slightly misplaced on the back of your head.</description>
+		<label>Abibas hat.</label>
+		<description>Abibas hat with three stripes. Hot, so wear just slightly placed on the top of your head.</description>
 		<graphicData>
 			<texPath>Things/Headgear/Pidorka/Pidorka</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -49,80 +49,22 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
-            </defaultOutfitTags>
+      </defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>AL_Apparel</researchPrerequisite>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
-    </ThingDef>
-
-<!-- +++++ ducky cap +++++ -->
-    <ThingDef ParentName="HatMakeableBase">
-		<defName>AL_ducky</defName>
-		<label>ducky cap</label>
-		<description>Industrial leather workers hat. Was popular among workers in 20th century and among gopniks in all eras.</description>
-		<graphicData>
-			<texPath>Things/Headgear/ducky</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<techLevel>Industrial</techLevel>
-		<tradeability>Sellable</tradeability>
-        <generateCommonality>1</generateCommonality>
-		<costStuffCount>20</costStuffCount>
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>1500</WorkToMake>
-			<Mass>0.09</Mass>
-            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat> <!-- seems a lot -->
-            <EquipDelay>0.8</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>0.10</MoveSpeed>
-			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
-		</equippedStatOffsets>
-    <thingCategories Inherit='False'>
-      <li>Headgear</li>
-    </thingCategories>
-		<apparel>
-			<bodyPartGroups>
-				<li>UpperHead</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Headgear/ducky</wornGraphicPath>
-			<layers>
-				<li>Overhead</li>
-			</layers>
-			<tags>
-				<li>IndustrialBasic</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Worker</li>
-            </defaultOutfitTags>
-		</apparel>
-		<recipeMaker>
-			<researchPrerequisite>AL_Apparel</researchPrerequisite>
-			<recipeUsers Inherit="False">
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />
     </ThingDef>
 	
 	<!-- +++++ bucket hat +++++ -->
     <ThingDef ParentName="HatMakeableBase">
 		<defName>AL_BucketHat</defName>
 		<label>Bucket hat</label>
-		<description>Wassuuuup my dudes!</description>
+		<description>Most popular rave apparel.</description>
 		<graphicData>
 			<texPath>Things/Headgear/BucketHat/BucketHat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -147,7 +89,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.10</MoveSpeed>
-			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+			<WorkSpeedGlobal>0.10</WorkSpeedGlobal>
 		</equippedStatOffsets>
     <thingCategories Inherit='False'>
       <li>Headgear</li>
@@ -165,10 +107,10 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
-            </defaultOutfitTags>
+      </defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>AL_Apparel</researchPrerequisite>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
@@ -177,73 +119,11 @@
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
     </ThingDef>
 
-<!--Furazhka->
-<ThingDef ParentName="HatMakeableBase">
-    <defName>AL_Furazhka</defName>
-    <label>Furazhka (peaked cap)</label>
-    <description>Cops hat.</description>
-    <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
-    </recipeMaker>
-    <graphicData>
-      <texPath>Things/Headgear/PeakedCap</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <costStuffCount>30</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <statBases>
-      <WorkToMake>1800</WorkToMake>
-      <Mass>0.14</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>0.8</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <SocialImpact>0.20</SocialImpact>
-	  <PainShockThreshold>0.10</PainShockThreshold>
-    </equippedStatOffsets>
-    <apparel>
-      <bodyPartGroups>
-        <li>UpperHead</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Things/Headgear/PeakedCap</wornGraphicPath>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <tags>
-        <li>IndustrialBasic</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
-  </ThingDef-->
-
 <!--backwards hat-->  
   <ThingDef ParentName="HatMakeableBase">
     <defName>AL_BwCap</defName>
     <label>backwards cap</label>
-    <description>A backwards baseball cap. does not provide shade to the eyes and also makes you look like a bit of a twat.</description>
+    <description>A backwards baseball cap. Does not provide shade to the eyes, makes you look cool like a teenager.</description>
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
@@ -280,7 +160,7 @@
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
-		<li>Soldier</li>
+		    <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
@@ -305,7 +185,7 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>AL_Tricorn</defName>
     <label>Pirate tricorn</label>
-    <description>Your name is Jack and you are drunk.</description>
+    <description>I guess your name is Jack and you cannot walk in straight line.</description>
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
@@ -341,8 +221,7 @@
         <li>IndustrialBasic</li>
       </tags>
       <defaultOutfitTags>
-        <li>Soldier</li>
-		<li>Worker</li>
+		    <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
@@ -367,7 +246,7 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>AL_Ushanka</defName>
     <label>Ushanka</label>
-    <description>...placeholder...</description>
+    <description>Warm winter hat. Cozy.</description>
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
@@ -409,8 +288,45 @@
     </apparel>
   </ThingDef>
   
-<!--kosmonavt Helmet-->
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Apparel_Jewish</defName>
+    <label>Kippah</label>
+    <description>A small hat worn by jews.</description>
+    <graphicData>
+      <texPath>Things/Headgear/Jewish/Jewish</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>20</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <Mass>0.034</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.4</EquipDelay>
+    </statBases>
+    <generateCommonality>0.5</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Headgear/Jewish</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
 <!--Prison hat-->
-<!--Slav Hair-->
 
 </Defs>

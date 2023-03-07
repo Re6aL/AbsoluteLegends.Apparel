@@ -50,7 +50,7 @@
       </defaultOutfitTags>
     </apparel>
 	<recipeMaker>
-			<researchPrerequisite>AL_Apparel</researchPrerequisite>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
@@ -58,14 +58,14 @@
 	</recipeMaker>
   </ThingDef>
 
-    <!-- +++++ Maika +++++ -->
+    <!-- +++++ telnyashka +++++ -->
 
     <ThingDef ParentName="ApparelMakeableBase">
-		<defName>AL_Maika</defName>
-		<label>"Maika"</label>
-		<description>A thin dirty sleeveless tank top, looks like it was used as a napkin after snacks.</description>
+		<defName>AL_MVest</defName>
+		<label>Sea marine vest</label>
+		<description>Sea marine vest - warm bit thin shirt with stripes.</description>
 		<graphicData>
-			<texPath>Things/Apparel/Maika/Maika</texPath>
+			<texPath>Things/Apparel/vest</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
@@ -74,15 +74,14 @@
 		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
-			<li>Leathery</li>
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>110</MaxHitPoints>
-			<WorkToMake>850</WorkToMake>
+			<WorkToMake>750</WorkToMake>
 			<Mass>0.27</Mass>
             <StuffEffectMultiplierArmor>0.18</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>2</StuffEffectMultiplierInsulation_Heat>
+            <StuffEffectMultiplierInsulation_Cold>3</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -96,7 +95,7 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Maika/Maika</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/vest</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -108,7 +107,7 @@
       </defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>AL_Apparel</researchPrerequisite>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
@@ -176,7 +175,7 @@
       </defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>AL_Apparel</researchPrerequisite>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
@@ -188,8 +187,8 @@
 <!-- Vatnik -->
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>AL_Vatnik</defName>
-    <label>Vatnik</label>
-    <description>Vatnik is famous soviet jacket that helped people not to die from cold in impossible circumstances.</description>
+    <label>Bodywarmer</label>
+    <description>Thin but warm jacket made from what you could find.</description>
     <graphicData>
       <texPath>Things/Apparel/Vatnik/Vatnik</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -232,7 +231,7 @@
       </defaultOutfitTags>
     </apparel>
 		<recipeMaker>
-			<researchPrerequisite>AL_Apparel</researchPrerequisite>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
