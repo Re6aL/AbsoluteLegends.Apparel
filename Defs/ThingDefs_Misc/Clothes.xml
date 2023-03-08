@@ -65,7 +65,7 @@
 		<label>Sea marine vest</label>
 		<description>Sea marine vest - warm bit thin shirt with stripes.</description>
 		<graphicData>
-			<texPath>Things/Apparel/vest</texPath>
+			<texPath>Things/Apparel/vest/vest</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
@@ -95,7 +95,7 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/vest</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/vest/vest</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
