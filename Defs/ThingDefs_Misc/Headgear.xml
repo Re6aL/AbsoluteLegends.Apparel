@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
- <!-- +++++ Shapka Pidorka +++++ -->
+ <!--Shapka Pidorka-->
 <ThingDef ParentName="HatMakeableBase">
 		<defName>AL_Pidorka</defName>
 		<label>Abibas hat.</label>
@@ -60,7 +60,7 @@
 		</recipeMaker>
     </ThingDef>
 	
-	<!-- +++++ bucket hat +++++ -->
+	<!--bucket hat-->
     <ThingDef ParentName="HatMakeableBase">
 		<defName>AL_BucketHat</defName>
 		<label>Bucket hat</label>
@@ -68,7 +68,7 @@
 		<graphicData>
 			<texPath>Things/Headgear/BucketHat/BucketHat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
+      <!--shaderType>CutoutComplex</shaderType-->
 		</graphicData>
 		<techLevel>Industrial</techLevel>
 		<tradeability>Sellable</tradeability>
@@ -287,13 +287,13 @@
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
-  
+<!--kippah-->
   <ThingDef ParentName="HatMakeableBase">
     <defName>Apparel_Jewish</defName>
     <label>Kippah</label>
     <description>A small hat worn by jews.</description>
     <graphicData>
-      <texPath>Things/Headgear/Jewish/Jewish</texPath>
+      <texPath>Things/Headgear/Jewish</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <costStuffCount>20</costStuffCount>
@@ -327,6 +327,79 @@
     </apparel>
   </ThingDef>
 
-<!--Prison hat-->
+<!--Foil hat-->
+<ThingDef ParentName="HatMakeableBase">
+    <defName>Apparel_MakeableFoilHelmet</defName>
+    <label>foil helmet</label>
+    <description>A thin helmet containing sheets of metallic foil. Slightly reduces the impact of psychic waves.</description>
+    <graphicData>
+      <texPath>Things/Headgear/Foil</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MaxHitPoints>20</MaxHitPoints>
+      <MarketValue>50</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.09</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.09</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.27</ArmorRating_Heat>
+      <Insulation_Cold>2</Insulation_Cold>
+      <Insulation_Heat>1</Insulation_Heat>
+      <EquipDelay>1.2</EquipDelay>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+    </recipeMaker>
+    <equippedStatOffsets>
+      <PsychicSensitivity>-0.30</PsychicSensitivity>
+    </equippedStatOffsets>
+    <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <countsAsClothingForNudity>true</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Headgear/Foil</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryBasic</li>
+        <li>IndustrialMilitaryAdvanced</li>
+        <li>SpacerMilitary</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>2</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>8</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
 
 </Defs>
