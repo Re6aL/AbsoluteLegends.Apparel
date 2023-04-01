@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- +++++ Sportivki +++++ -->
+  <!--Sportivki-->
 
   <ThingDef ParentName="ApparelMakeableBase" Name="Sportivki">
     <defName>AL_Sportivki</defName>
@@ -11,10 +11,11 @@
       <texPath>Things/Apparel/Pants/Sportivki</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.7</drawSize>
 	</graphicData>
 	<techLevel>Industrial</techLevel>
 	<tradeability>Sellable</tradeability>
-    <generateCommonality>0.35</generateCommonality>
+    <generateCommonality>0.2</generateCommonality>
     <costStuffCount>42</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
@@ -58,9 +59,9 @@
 	</recipeMaker>
   </ThingDef>
 
-    <!-- +++++ telnyashka +++++ -->
+    <!--telnyashka-->
 
-    <ThingDef ParentName="ApparelMakeableBase">
+  <ThingDef ParentName="ApparelMakeableBase">
 		<defName>AL_MVest</defName>
 		<label>Sea marine vest</label>
 		<description>Sea marine vest - warm bit thin shirt with stripes.</description>
@@ -70,7 +71,7 @@
 		</graphicData>
 		<techLevel>Industrial</techLevel>
 		<tradeability>Sellable</tradeability>
-        <generateCommonality>1</generateCommonality>
+        <generateCommonality>0.1</generateCommonality>
 		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -113,23 +114,24 @@
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
-    </ThingDef>
+  </ThingDef>
 
 
- <!-- +++++ ABIBAS Tri Poloski +++++ -->
+ <!--ABIBAS jacket-->
 
     <ThingDef ParentName="ApparelMakeableBase">
-		<defName>AL_Abibas</defName>
-		<label>Abibas sport suit</label>
-		<description>Stripes say it all. You just need some beer, sunflowers and a hardbass soundtrack.</description>
+		<defName>AL_AbibasJ</defName>
+		<label>Abibas sport jacket</label>
+		<description>You just need some beer, sunflowers and a hardbass soundtrack.</description>
 		<graphicData>
 			<texPath>Things/Apparel/Abibas/Abibas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
 		<tradeability>Sellable</tradeability>
-        <generateCommonality>1</generateCommonality>
+        <generateCommonality>0.5</generateCommonality>
 		<costStuffCount>70</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -184,28 +186,26 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
     </ThingDef>
 	
-<!-- Vatnik -->
+<!--Prison Robe-->
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>AL_Vatnik</defName>
-    <label>Bodywarmer</label>
-    <description>Thin but warm jacket made from what you could find.</description>
+    <defName>AL_Robe</defName>
+    <label>Prison Robe</label>
+    <description>Based on russian prison uniform. Spiritual successor of GULAG's forced labour camp apparel.</description>
     <graphicData>
-      <texPath>Things/Apparel/Vatnik/Vatnik</texPath>
+      <texPath>Things/Apparel/Robe/Robe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.0</drawSize>
     </graphicData>
     <costStuffCount>80</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
-      <li>Leathery</li>
     </stuffCategories>
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
     <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
+      <MaxHitPoints>150</MaxHitPoints>
       <WorkToMake>8000</WorkToMake>
-      <Mass>2</Mass>
+      <Mass>1.2</Mass>
       <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>1.7</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
@@ -214,21 +214,20 @@
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
-        <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Apparel/Vatnik/Vatnik</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Robe/Robe</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
       <tags>
-        <li>IndustrialBasic</li>
+        <li>Prisoner</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
-        <li>Soldier</li>
       </defaultOutfitTags>
+      <useWornGraphicMask>true</useWornGraphicMask>
     </apparel>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
