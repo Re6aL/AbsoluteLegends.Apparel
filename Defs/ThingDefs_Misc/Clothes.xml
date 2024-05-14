@@ -5,8 +5,8 @@
 
   <ThingDef ParentName="ApparelMakeableBase" Name="Sportivki">
     <defName>AL_Sportivki</defName>
-    <label>sporty striped pants</label>
-    <description>Sporty pants with stripes on the sides. Suits every occasion, weddings for example.</description>
+    <label>Sporty striped pants</label>
+    <description>Sporty pants with stripes on the sides. Suits every occasion, weddings for example. No matter how you color them, the stripes stay white.</description>
     <graphicData>
       <texPath>Things/Apparel/Pants/Sportivki</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -64,30 +64,31 @@
   <ThingDef ParentName="ApparelMakeableBase">
 		<defName>AL_MVest</defName>
 		<label>Sea marine vest</label>
-		<description>Sea marine vest - warm bit thin shirt with stripes.</description>
+		<description>Sea marine vest - warm thin striped shirt. Can help you warm up.</description>
 		<graphicData>
 			<texPath>Things/Apparel/vest/vest</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
 		<tradeability>Sellable</tradeability>
         <generateCommonality>0.1</generateCommonality>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>35</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>110</MaxHitPoints>
 			<WorkToMake>750</WorkToMake>
-			<Mass>0.27</Mass>
+			<Mass>0.3</Mass>
             <StuffEffectMultiplierArmor>0.18</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>3</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Cold>5</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MeleeDodgeChance>0.10</MeleeDodgeChance>
-			<MoveSpeed>0.03</MoveSpeed>
+			<MoveSpeed>0.05</MoveSpeed>
 		</equippedStatOffsets>
     <thingCategories Inherit='False'>
       <li>Apparel</li>
@@ -116,13 +117,12 @@
 		</recipeMaker>
   </ThingDef>
 
-
  <!--ABIBAS jacket-->
 
     <ThingDef ParentName="ApparelMakeableBase">
 		<defName>AL_AbibasJ</defName>
 		<label>Abibas sport jacket</label>
-		<description>You just need some beer, sunflowers and a hardbass soundtrack.</description>
+		<description>Everyday uniform. Jogging or wedding, suits every occasion.</description>
 		<graphicData>
 			<texPath>Things/Apparel/Abibas/Abibas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -131,7 +131,7 @@
 		</graphicData>
 		<techLevel>Industrial</techLevel>
 		<tradeability>Sellable</tradeability>
-        <generateCommonality>0.5</generateCommonality>
+        <generateCommonality>0.35</generateCommonality>
 		<costStuffCount>70</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -186,10 +186,10 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
     </ThingDef>
 	
-<!--Prison Robe-->
+<!--Vatnik->
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>AL_Robe</defName>
-    <label>Prison Robe</label>
+    <label>Vatnik</label>
     <description>Based on russian prison uniform. Spiritual successor of GULAG's forced labour camp apparel.</description>
     <graphicData>
       <texPath>Things/Apparel/Robe/Robe</texPath>
@@ -237,6 +237,6 @@
 			</recipeUsers>
 		</recipeMaker>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
-  </ThingDef>
+  </ThingDef-->
 
 </Defs>

@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Absolute Legends Apparel</name>
+  <name>Absolute Legends: Apparel</name>
   <author>RE6AL</author>
+  <modVersion>24.5.14</modVersion>
   <supportedVersions>
-    <li>1.4</li>
+    <li>1.5</li>
   </supportedVersions>
-  <packageId>Absolute.Legends.Apparel</packageId>
-  <description>Some nice cultural and practical apparel that must crank up the immersion.
+  <packageId>re6al.Legends.Apparel</packageId>
+  <description>Apparel that must crank up the immersion.
   </description>
   <loadAfter>
   </loadAfter>

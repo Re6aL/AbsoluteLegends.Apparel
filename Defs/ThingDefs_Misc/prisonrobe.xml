@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>AL_PrisonRobe</defName>
+    <label>prison jumpsuit</label>
+    <description>An orange jumpsuit worn by prisoners.</description>
+    <graphicData>
+      <texPath>Things/Apparel/prisonrobe/AL_Prisonrobe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>AL_PrisonerApparel</li>
+    </thingCategories>
+    <statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+      <Mass>0.25</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1.1</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.12</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SlaveSuppressionOffset>0.1</SlaveSuppressionOffset>
+      <SocialImpact>-0.1</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+		    <li>Arms</li>
+		    <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/prisonrobe/AL_Prisonrobe</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+        <!--li>Middle</li-->
+      </layers>
+      <tags>
+        <li>Prisoner</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Slave</li>
+      </defaultOutfitTags>
+	  <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+</Defs>
