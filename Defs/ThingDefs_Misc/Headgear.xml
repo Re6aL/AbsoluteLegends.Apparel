@@ -483,8 +483,9 @@
     <description>A simple helmet. Gives moderate protection against sharp attacks but is not effective against blunt weapons. Medical insignia gives tending boost.</description>
     <techLevel>Industrial</techLevel>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</texPath>
+      <texPath>Things/Headgear/MedHelmet/MedHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <stuffCategories>
@@ -517,6 +518,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
+      <wornGraphicPath>Things/Headgear/MedHelmet/MedHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
