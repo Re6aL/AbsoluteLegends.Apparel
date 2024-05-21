@@ -477,4 +477,63 @@
     </colorGenerator-->
   </ThingDef>
 
+  <!-- Medic Helmet -->
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>AL_MedHelmet</defName>
+    <description>A simple helmet. Gives moderate protection against sharp attacks but is not effective against blunt weapons. Medical insignia gives tending boost.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <tradeTags>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+    <statBases>
+      <WorkToMake>3200</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>2</Mass>
+    <Flammability>0.4</Flammability>
+    <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+    <ArmorRating_Blunt>0.225</ArmorRating_Blunt>
+    <ArmorRating_Heat>0.30</ArmorRating_Heat>
+    <Insulation_Cold>0.5</Insulation_Cold>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  <comps Inherit="False">
+   <li Class="CompProperties_Forbiddable"/>
+   <li>
+    <compClass>CompQuality</compClass>
+   </li>
+  </comps>
+    <equippedStatOffsets>
+      <MedicalTendQuality>0.10</MedicalTendQuality>
+      <MedicalTendSpeed>0.10</MedicalTendSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
 </Defs>
