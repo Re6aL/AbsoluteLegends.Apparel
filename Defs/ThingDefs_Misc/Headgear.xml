@@ -480,6 +480,7 @@
   <!-- Medic Helmet -->
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>AL_MedHelmet</defName>
+    <label>Medic Helmet</label>
     <description>A simple helmet. Gives moderate protection against sharp attacks but is not effective against blunt weapons. Medical insignia gives tending boost.</description>
     <techLevel>Industrial</techLevel>
     <graphicData>
